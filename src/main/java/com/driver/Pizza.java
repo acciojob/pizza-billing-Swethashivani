@@ -75,7 +75,7 @@ if(isBillGenereated==false){
         this.bill= this.bill + "Extra Toppings Added: " + this.toppingsprice + "\n";
     if(isTakeAwayAdded==true)
         this.bill= this.bill + "Paperbag Added: " + this.takeAwayPrice + "\n";
-    this.bill= this.bill + "Total Price: " + this.bill + "\n";
+    this.bill= this.bill + "Total Price: " + this.price + "\n";
     isBillGenereated=true;
 }
 
