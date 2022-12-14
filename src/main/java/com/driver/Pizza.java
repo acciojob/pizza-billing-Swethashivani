@@ -8,7 +8,7 @@ public class Pizza {
     private int cheezePrice;
     private int toppingsprice;
     private int takeAwayPrice;
-    boolean isCheezeAdded;
+    boolean isCheeseAdded;
     boolean isToppingsAdded;
     boolean isTakeAwayAdded;
     boolean isBillGenereated;
@@ -29,7 +29,7 @@ public class Pizza {
             this.price=400;
             this.toppingsprice=120;
         }
-        this.isCheezeAdded=false;
+        this.isCheeseAdded=false;
         this.isTakeAwayAdded=false;
         this.isToppingsAdded=false;
         this.isBillGenereated=false;
@@ -43,9 +43,9 @@ public class Pizza {
 
     public void addExtraCheese(){
         // your code goes here
-        if(isCheezeAdded==false){
+        if(isCheeseAdded==false){
             this.price=this.price+this.cheezePrice;
-            isCheezeAdded=true;
+            isCheeseAdded=true;
         }
     }
 
@@ -59,9 +59,9 @@ public class Pizza {
 
     public void addTakeaway(){
         // your code goes here
-        if(isToppingsAdded==false){
-            this.price=this.price+this.toppingsprice;
-            isToppingsAdded=true;
+        if(isTakeAwayAdded==false){
+            this.price=this.price+this.takeAwayPrice;
+            isTakeAwayAdded=true;
         }
     }
 
@@ -69,7 +69,7 @@ public class Pizza {
         // your code goes here
 if(isBillGenereated==false){
 
-    if(isCheezeAdded==true)
+    if(isCheeseAdded==true)
         this.bill = this.bill + "Extra Cheese Added: " + this.cheezePrice + "\n";
     if(isToppingsAdded==true)
         this.bill= this.bill + "Extra Toppings Added: " + this.toppingsprice + "\n";
